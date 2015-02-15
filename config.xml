@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.doxa360.nikitdes" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android= "http://schemas.android.com/apk/res/android">
+
+    <name>Nikit Design Outlet </name>
+
+    <description>
+        Nikit Design Outlet
+    </description>
+
+    <author email="#" href="#">
+       
+    </author>
+   
+
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-targetSdkVersion" value="17" />
+    <preference name="android-maxSdkVersion" value="19" /> 
+
+    <icon src="img/logo.png" />
+    
+    <access origin="*" />
+
+</widget>

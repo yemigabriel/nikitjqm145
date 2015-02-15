@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nikit Designer Outlet</title>
+	
+	<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquerymobile.nativedroid.css">
+	<link rel="stylesheet" type="text/css" href="css/jquerymobile.nativedroid.dark.css">
+	<link rel="stylesheet" type="text/css" href="css/jquerymobile.nativedroid.color.purple.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/nikit.js"></script>
+	<script type="text/javascript" src="js/nativedroid.script.js"></script>
+	<script type="text/javascript" src="css/slick.min.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="nikit_home">
+
+	<div id="mypanel" data-role="panel" data-position="left" data-display="overlay">
+
+	<h3 class="category">Categories</h3>	
+
+	<div data-role="collapsible-set" data-content-theme="a" data-theme="a" id="set" data-inset="false" style="width:94%">
+
+	<div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Deals</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=32">Savers</a></li>
+			<li><a data-ajax="false" href="category.html?cat=33">Sales</a></li>
+			<!-- <li><a data-ajax="false" href="category.html?cat=36">Gifts</a></li> -->
+		</ul>
+        
+    </div>
+	
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+
+       <h3>Women</h3>
+       <ul data-role="listview" >
+			<li><a data-ajax="false" href="category.html?cat=14">Polos &amp; Tees</a></li>
+			<li><a data-ajax="false" href="category.html?cat=15">Blouses</a></li>
+			<li><a data-ajax="false" href="category.html?cat=16">Dresses</a></li>
+			<li><a data-ajax="false" href="category.html?cat=17">Skirts &amp; Pants</a></li>
+			<li><a data-ajax="false" href="category.html?cat=19">Shoes, Bags &amp; Belts</a></li>
+			<li><a data-ajax="false" href="category.html?cat=20">Lingerie &amp; Accessories</a></li>
+		</ul>
+        
+    </div>
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Men</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=21">Polos &amp; Tees</a></li>
+			<li><a data-ajax="false" href="category.html?cat=22">Shirts</a></li>
+			<li><a data-ajax="false" href="category.html?cat=23">Jeans &amp; Pants</a></li>
+			<li><a data-ajax="false" href="category.html?cat=24">Shoes, Bags &amp; Belts</a></li>
+			<li><a data-ajax="false" href="category.html?cat=25">Underwear &amp; Accessories</a></li>
+		</ul>
+        
+    </div>
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Kids</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=12">Girls</a></li>
+			<li><a data-ajax="false" href="category.html?cat=13">Boys</a></li>
+		</ul>
+        
+    </div>
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Jewellery</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=26">Earrings</a></li>
+			<li><a data-ajax="false" href="category.html?cat=27">Neckpieces</a></li>
+			<li><a data-ajax="false" href="category.html?cat=28">Bangles &amp; Bracelets</a></li>
+			<li><a data-ajax="false" href="category.html?cat=29">Sets</a></li>
+			<li><a data-ajax="false" href="category.html?cat=37">Watches</a></li>
+		</ul>
+        
+    </div>
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Accessories</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=30">Personal</a></li>
+			<li><a data-ajax="false" href="category.html?cat=31">Office</a></li>
+		</ul>
+        
+    </div>
+    <!--
+    <div data-role="collapsible" id="set1" data-collapsed="true">
+       <h3>Home</h3>
+       <ul data-role="listview">
+			<li><a data-ajax="false" href="category.html?cat=34">Accessories</a></li>
+			<li><a data-ajax="false" href="category.html?cat=35">Decoratives</a></li>
+		</ul>
+        
+    </div>
+    -->
+</div>
+		<!--<ul data-role="listview">
+			<li>Featured</li>
+			<li>Children</li>
+			<li>Ladies</li>
+		</ul>-->
+
+	</div>
+	<div id="mycart" data-role="panel" data-position="right" data-display="push" >
+		<p class="cartinfopanel">Your Cart</p>
+		<ul class="cartlistpanel" data-role="listview">
+			
+		</ul>
+		
+	</div>
+
+	<div data-role ="header" data-toggle-tap="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
+		<a data-ajax="false" href="#mypanel"><i class="fa fa-bars" ></i></a>
+		<h4>Nikit Designer Outlet</h4>
+		<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" style="width:auto!important">
+			<a data-ajax="false" class="right" data-ajax="false" data-role="button" href="search.html" style=""><i class="fa fa-search"></i></a>
+			<a data-ajax="false" class="right" data-role="button" href="#mycart" style=""><i class="fa fa-shopping-cart"></i></a>
+		</div>
+	</div>
+	<!-- /header -->
+
+	<div role="main" class="ui-content">
+
+	<h1 class="pagetitle">Top Deals</h1>
+		<div id="home_featured" class="featured">
+			
+			<!--<div class="product_wrap">
+				<a data-ajax="false" href="#">
+					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
+					<div class="info"><h4>loading ...</h4>
+					<p>...</p><span class="btn">...</span></div>
+				</a>
+			</div> 
+			<div class="product_wrap">
+				<a data-ajax="false" href="#">
+					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
+					<div class="info"><h4>loading ...</h4>
+					<p>...</p><span class="btn">...</span></div>
+				</a>
+			</div> 
+			<div class="product_wrap">
+				<a data-ajax="false" href="#">
+					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
+					<div class="info"><h4>loading ...</h4>
+					<p>...</p><span class="btn">...</span></div>
+				</a>
+			</div> -->
+
+
+		</div>
+
+		<!-- Popular Deals -->
+
+		<h1 class="pagetitle">Popular Deals</h1>
+
+		<div id="home_popular" class="featured">
+
+		</div>
+
+		<!-- women -->
+		<h1 class="pagetitle">Women</h1>
+
+		<div id="home_women" class="featured">
+
+		</div>
+
+		<!-- men -->
+		<h1 class="pagetitle">Men</h1>
+
+		<div id="home_men" class="featured">
+
+		</div>
+
+		<!-- kids --> 
+		<h1 class="pagetitle">Girls + Boys</h1>
+
+		<div id="home_kids" class="featured">
+
+		</div>
+
+	</div>
+
+	
+
+
+</div><!-- /page -->
+
+</body>
+</html>
