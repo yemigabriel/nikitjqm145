@@ -6,6 +6,7 @@ body{
 	font-size: 14px;
 	font-weight: normal;
 }
+.ui-page { -webkit-backface-visibility: hidden; }
 
 h4{
 	font-weight: bold;
