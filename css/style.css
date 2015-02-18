@@ -45,7 +45,7 @@ text-transform: uppercase;
 }
 
 .featured div.product_wrap a div.imgwrapper{
-	height: 180px;
+	/*height: 180px;*/
 	overflow: hidden;
 	width: 100%;
 	
@@ -180,7 +180,9 @@ border-bottom: 1px solid #555!important;
 .pimg_wrapper img{
 	width: 95%;
 }
-
+.ui-header .ui-title{
+	font-size: 22px;
+}
 }
 
 @media (max-width: 480px ){
@@ -190,7 +192,9 @@ border-bottom: 1px solid #555!important;
 	
 
 }
-
+.ui-header .ui-title{
+	font-size: 20px;
+}
 .pimg_wrapper img{
 	width: 95%;
 }
