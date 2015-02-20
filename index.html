@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
 	<title>Nikit Designer Outlet</title>
 	
 	<link rel="shortcut icon" href="../favicon.ico">
@@ -19,7 +20,11 @@
 	<script type="text/javascript" src="js/nikit.js"></script>
 	<script type="text/javascript" src="js/nativedroid.script.js"></script>
 	<script type="text/javascript" src="css/slick.min.js"></script>
-
+<style type="text/css">
+	h1.pagetitle{
+		margin: 15px 45px 5px;
+	}
+</style>
 </head>
 <body>
 <div data-role="page" id="nikit_home">
@@ -117,74 +122,89 @@
 		
 	</div>
 
-	<div data-role ="header" data-toggle-tap="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
+	<div data-role ="header" data-tap-toggle="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
 		<a data-ajax="false" href="#mypanel"><i class="fa fa-bars" ></i></a>
 		<h4>Nikit Designer Outlet</h4>
 		<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" style="width:auto!important">
 			<a data-ajax="false" class="right" data-ajax="false" data-role="button" href="search.html" style=""><i class="fa fa-search"></i></a>
-			<a data-ajax="false" class="right" data-role="button" href="#mycart" style=""><i class="fa fa-shopping-cart"></i></a>
+			<a data-ajax="false" class="mainCartBtn right" data-role="button"  href="#" style=""><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	<!-- /header -->
 
 	<div role="main" class="ui-content">
 
-	<h1 class="pagetitle">Top Deals</h1>
-		<div id="home_featured" class="featured">
-			
-			<!--<div class="product_wrap">
-				<a data-ajax="false" href="#">
-					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
-					<div class="info"><h4>loading ...</h4>
-					<p>...</p><span class="btn">...</span></div>
-				</a>
-			</div> 
-			<div class="product_wrap">
-				<a data-ajax="false" href="#">
-					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
-					<div class="info"><h4>loading ...</h4>
-					<p>...</p><span class="btn">...</span></div>
-				</a>
-			</div> 
-			<div class="product_wrap">
-				<a data-ajax="false" href="#">
-					<div class="imgwrapper"><img src="" alt="loading ..." /></div>
-					<div class="info"><h4>loading ...</h4>
-					<p>...</p><span class="btn">...</span></div>
-				</a>
-			</div> -->
-
-
+		<div class="featured_wrapper">
+			<h1 class="pagetitle">Top Deals</h1>
+			<div id="home_featured" class="featured">
+				<div class="LoadingProducts1">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
+			</div>
 		</div>
 
 		<!-- Popular Deals -->
+		<div class="featured_wrapper popular">
+			<h1 class="pagetitle">Popular Deals</h1>
 
-		<h1 class="pagetitle">Popular Deals</h1>
-
-		<div id="home_popular" class="featured">
-
+			<div id="home_popular" class="featured">
+				<div class="LoadingProducts2">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
+			</div>
 		</div>
 
+		<div class="featured_wrapper women">
 		<!-- women -->
 		<h1 class="pagetitle">Women</h1>
 
 		<div id="home_women" class="featured">
-
+		<div class="LoadingProducts3">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
+		</div>
 		</div>
 
 		<!-- men -->
-		<h1 class="pagetitle">Men</h1>
+		<div class="featured_wrapper men">
+			<h1 class="pagetitle">Men</h1>
 
 		<div id="home_men" class="featured">
-
+			<div class="LoadingProducts4">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
+		</div>
 		</div>
 
 		<!-- kids --> 
+		<div class="featured_wrapper popular">
 		<h1 class="pagetitle">Girls + Boys</h1>
 
 		<div id="home_kids" class="featured">
-
+				<div class="LoadingProducts5">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
 		</div>
+		</div>
+
+		<!-- jewellerys --> 
+		<div class="featured_wrapper women">
+		<h1 class="pagetitle">Jewellery</h1>
+
+		<div id="home_jewellery" class="featured">
+				<div class="LoadingProducts6">
+					<i class="fa fa-spinner"></i> Loading products...
+				</div>
+		</div>
+		</div>
+
+		<div class="noCartPopUp" data-role="popup"   data-dismissible="false" style="max-width:400px;">
+			<div role="main" class="ui-content" style="background:#fff;color:#333" >
+			<img src="img/logo.png" style="display:block;margin:0px auto;width:48px">
+        	<h3 class="ui-title" class="nocartmsg"></h3>
+        	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" style="background:#C58BE2;display:block">Continue Shopping</a>
+        	</div>
+		</div> 
 
 	</div>
 

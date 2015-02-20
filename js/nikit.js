@@ -36,6 +36,7 @@ $( document ).on( "pagecreate", "#nikit_home", function ( event ) {
     topwomenproducts();
     topmenproducts();
     topkidsproducts();
+    topjewelleryproducts();
 });
 
 $( document ).on( "pagebeforechange", "#nikit_home", function ( event ) {
@@ -44,6 +45,7 @@ $( document ).on( "pagebeforechange", "#nikit_home", function ( event ) {
     topwomenproducts();
     topmenproducts();
     topkidsproducts();
+    topjewelleryproducts();
 });
 
 $( document ).on( "pagecreate", "#nikit_category", function ( event ) {
@@ -263,34 +265,38 @@ function topproducts() {
 
         $('#home_featured').slick({
                 slidesToShow: 4,
-                slidesToScroll:1,
+                slidesToScroll: 1,infinite:true,  autoplay: true,
+  autoplaySpeed: 2000,
                 responsive: [
                     {
                         breakpoint:800,
                         settings:{
                             slidesToShow: 4,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,infinite:true, autoplay: true,
+  autoplaySpeed: 2000
                         }
                     },
                     {
                         breakpoint:640,
                         settings:{
                             slidesToShow:3,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true, autoplay: true,
+  autoplaySpeed: 2000
                         }
                     },
                     {
                         breakpoint:480,
                         settings:{
                             slidesToShow:2,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true, autoplay: true,
+  autoplaySpeed: 2000
                         }
                     },
                     {
                         breakpoint:320,
                         settings:{
                             slidesToShow:1,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     }
 
@@ -299,6 +305,7 @@ function topproducts() {
 		});
     jw.done(function() {
     console.log( "second successtop" );
+    $('.LoadingProducts1').attr('style', 'display:none');
   });
   jw.fail(function(jqxhr, textStatus, error) {
     var err = textStatus + ", " + error;
@@ -334,34 +341,34 @@ function popularproducts() {
 
         $('#home_popular').slick({
                 slidesToShow: 4,
-                slidesToScroll:1,
+                slidesToScroll: 1,infinite:true,
                 responsive: [
                     {
                         breakpoint:800,
                         settings:{
                             slidesToShow: 4,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:640,
                         settings:{
                             slidesToShow:3,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:480,
                         settings:{
                             slidesToShow:2,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:320,
                         settings:{
                             slidesToShow:1,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     }
 
@@ -373,6 +380,7 @@ function popularproducts() {
 
     jw.done(function() {
     console.log( "second success" );
+    $('.LoadingProducts2').attr('style', 'display:none');
   });
   jw.fail(function() {
     console.log( "error" );
@@ -404,34 +412,34 @@ function topwomenproducts() {
 
         $('#home_women').slick({
                 slidesToShow: 4,
-                slidesToScroll:1,
+                slidesToScroll: 1,infinite:true,
                 responsive: [
                     {
                         breakpoint:800,
                         settings:{
                             slidesToShow: 4,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:640,
                         settings:{
                             slidesToShow:3,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:480,
                         settings:{
                             slidesToShow:2,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:320,
                         settings:{
                             slidesToShow:1,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     }
 
@@ -442,6 +450,7 @@ function topwomenproducts() {
 	});
      jw.done(function() {
     console.log( "second successtop" );
+    $('.LoadingProducts3').attr('style', 'display:none');
   });
   jw.fail(function(jqxhr, textStatus, error) {
     var err = textStatus + ", " + error;
@@ -455,7 +464,7 @@ function topwomenproducts() {
 
 function topmenproducts() {
 	
-	$.getJSON(serviceURL + 'getsalesbycategory.php?cat='+6+'&count='+7, function(data) {
+	var jw = $.getJSON(serviceURL + 'getsalesbycategory.php?cat='+6+'&count='+7, function(data) {
 		$('#home_men').empty();
 		products = data;
 		$.each(products, function(index, product) {
@@ -474,34 +483,34 @@ function topmenproducts() {
 
         $('#home_men').slick({
                 slidesToShow: 4,
-                slidesToScroll:1,
+                slidesToScroll: 1,infinite:true,
                 responsive: [
                     {
                         breakpoint:800,
                         settings:{
                             slidesToShow: 4,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:640,
                         settings:{
                             slidesToShow:3,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:480,
                         settings:{
                             slidesToShow:2,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:320,
                         settings:{
                             slidesToShow:1,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     }
 
@@ -509,13 +518,16 @@ function topmenproducts() {
             });
 		
 	});
+    jw.done(function(){
+        $('.LoadingProducts4').attr('style', 'display:none');
+    })
 	
 }
 
 
 function topjewelleryproducts() {
 	
-	$.getJSON(serviceURL + 'getsalesbycategory.php?cat='+1+'&count='+7, function(data) {
+	var jw = $.getJSON(serviceURL + 'getsalesbycategory.php?cat='+1+'&count='+7, function(data) {
 		$('#home_jewellery').empty();
 		products = data;
 		$.each(products, function(index, product) {
@@ -531,14 +543,53 @@ function topjewelleryproducts() {
 			'</div>'
             );
 		});
+
+         $('#home_jewellery').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,infinite:true,
+                responsive: [
+                    {
+                        breakpoint:800,
+                        settings:{
+                            slidesToShow: 4,
+                            slidesToScroll: 1,infinite:true
+                        }
+                    },
+                    {
+                        breakpoint:640,
+                        settings:{
+                            slidesToShow:3,
+                            slidesToScroll: 1,infinite:true
+                        }
+                    },
+                    {
+                        breakpoint:480,
+                        settings:{
+                            slidesToShow:2,
+                            slidesToScroll: 1,infinite:true
+                        }
+                    },
+                    {
+                        breakpoint:320,
+                        settings:{
+                            slidesToShow:1,
+                            slidesToScroll: 1,infinite:true
+                        }
+                    }
+
+                ]
+            });
 		
 	});
+    jw.done(function(){
+        $('.LoadingProducts6').attr('style', 'display:none');
+    })
 	
 }
 
 function topkidsproducts() {
 	
-	$.getJSON(serviceURL + 'getsalesbycategory.php?cat='+4+'&count='+7, function(data) {
+	var jw = $.getJSON(serviceURL + 'getsalesbycategory.php?cat='+4+'&count='+7, function(data) {
 		$('#home_kids').empty();
 		products = data;
 		$.each(products, function(index, product) {
@@ -557,34 +608,34 @@ function topkidsproducts() {
 
         $('#home_kids').slick({
                 slidesToShow: 4,
-                slidesToScroll:1,
+                slidesToScroll: 1,infinite:true,
                 responsive: [
                     {
                         breakpoint:800,
                         settings:{
                             slidesToShow: 4,
-                            slidesToScroll: 1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:640,
                         settings:{
                             slidesToShow:3,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:480,
                         settings:{
                             slidesToShow:2,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     },
                     {
                         breakpoint:320,
                         settings:{
                             slidesToShow:1,
-                            slidesToScroll:1
+                            slidesToScroll: 1,infinite:true
                         }
                     }
 
@@ -592,6 +643,9 @@ function topkidsproducts() {
             });
 		
 	});
+    jw.done(function(){
+        $('.LoadingProducts5').attr('style', 'display:none');
+    })
 	
 }
 
@@ -673,8 +727,118 @@ $(document).on('click', '#addtocartBtn', function(event) {
 
 */
 
+$(document).on('click', '.mainCartBtn', function(event) {
+    event.preventDefault();
+    //var cartTotal = 0;
+    db.transaction(function (tx) {
+     tx.executeSql(selectAllStatement, [], function (tx, result) {
+     var dataset = result.rows;
+     console.log(dataset);
+     if (dataset.length ==0){
+        //popup comes here- no item in cart 
+        var msg="You have no items in your cart";
+        $('.nocartmsg').append(msg);
+      $('.noCartPopUp').popup();
+    $('.noCartPopUp').popup('open');
+
+     }else{
+        //go to cart.html
+        window.location = "cart.html";
+     }
+ });
+ });
+
+});
 
 
+$("#searchBtnh").on('click', '.selector', function(event) {
+    event.preventDefault();
+    var searchJQM = $.ajax({  
+            //regmembers - registers members and the order.
+  url: (serviceURL + 'searchproducts.php'),
+  type: "GET",  
+  data: {
+      search: $('#searchInput').val()
+        },
+   datatype:"json"
+   
+    });
+        searchJQM.fail(function(jqxhr, textStatus, error) {
+    var err = textStatus + ", " + error;
+    console.log( "Request Failed: " + err );
+  });
 
+    
+});
 
+$( document ).on( "pagecreate", "#nikit_cart", function() {
+    $( "#autocomplete" ).on( "filterablebeforefilter", function ( e, data ) {
+        var $ul = $( this ),
+            $input = $( data.input ),
+            value = $input.val(),
+            html = "";
+        $ul.html( "" );
+        if ( value && value.length > 2 ) {
+            $ul.html( "<li><div class='ui-loader'><span class='ui-icon ui-icon-loading'></span></div></li>" );
+            $ul.listview( "refresh" );
+            $.ajax({
+                url: serviceURL + "searchproducts.php?search="+value+'&count='+10,
+                dataType: "json"/*,
+                data: {
+                    q: $input.val()
+                }*/
+            })
+            .then( function ( response ) {
+                $.each( response, function ( i, val ) {
+                    html += '<li><a href=""><img src="'+imgSmall+val.picFileName+'"/><h4>'+ val.ProductName + '</h4><p>'+val.ProductDescription+'</p><p>'+val.prPrice+'</p></a></li>';
+                });
+                $ul.html( html );
+                $ul.listview( "refresh" );
+                $ul.trigger( "updatelayout");
+            });
+        }
+    });
+});
 
+$( document ).on( "pagecreate", "#nikit_search", function() {
+    $( "#searchTextBox" ).on( "change", function ( e, data ) {
+        var $ul = $( '#searchList' ),
+            //$input = $( data.input ),
+            value = $( "#searchTextBox" ).val(),//$input.val(),
+            html = "";
+console.log(value);
+        $ul.html( "" );
+        if ( value && value.length > 0 ) {
+            $("#searchTerm").text(value);
+            $ul.html( '<li><div class="LoadingProducts3" style="text-align:left;font-size:16px;"><i class="fa fa-spinner"></i> Searching products...</div></li>' );
+            //$ul.listview( "refresh" );
+            var searchJQM = $.ajax({
+                url: serviceURL + "searchproducts.php?search="+value+'&count='+10,
+                dataType: "json"/*,
+                data: {
+                    q: $input.val()
+                }*/
+            })
+            searchJQM.always(function(response){
+$ul.html( '<li><div class="LoadingProducts3" style="text-align:left;font-size:16px;"><i class="fa fa-spinner"></i> Searching products...</div></li>' );
+            
+            });
+            searchJQM .done( function ( response ) {
+                if (response=='null'){
+                    console.log('nully');
+                    $ul.html( '<li><div class="LoadingProducts3" style="text-align:left"><i class="fa fa-warning"></i> No items match your search. Please try again.</div></li>' );
+            
+                }else{
+                $.each( response, function ( i, val ) {
+                    html += '<li><a href="productdetail.html?pid='+val.ProductID+'"><img src="'+imgSmall+val.picFileName+'"/><h4>'+ val.ProductName + '</h4><p>'+val.ProductDescription+'</p><p>'+val.prPrice+'</p></a></li>';
+                });
+                }
+                $ul.html( html );
+                $ul.listview( "refresh" );
+                $ul.trigger( "updatelayout");
+                $('.LoadingProducts3').attr('style', 'display:none');
+            });
+            //searchJQM.fail();
+        }
+    });
+});

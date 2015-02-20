@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
 	<title>Nikit Designer Outlet</title>
 	<link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
@@ -115,12 +116,12 @@
 		</ul>
 	</div>
 
-	<div data-role ="header" data-toggle-tap="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
+	<div data-role ="header" data-tap-toggle="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
 		<a data-ajax="false" href="#mypanel"><i class="fa fa-bars" ></i></a>
 		<h4 class="categorytitle">...</h4>
 		<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" style="width:auto!important">
 			<a data-ajax="false" class="right" data-ajax="false" data-role="button" href="search.html" style=""><i class="fa fa-search"></i></a>
-			<a data-ajax="false" class="right" data-role="button" href="#mycart" style=""><i class="fa fa-shopping-cart"></i></a>
+			<a data-ajax="false" class="mainCartBtn right" data-role="button" href="#" style=""><i class="fa fa-shopping-cart"></i></a>
 		</div>
 	</div>
 	<!-- /header -->
@@ -140,6 +141,13 @@
 			</div> 
 		</div>
 
+		<div class="noCartPopUp" data-role="popup"   data-dismissible="false" style="max-width:400px;">
+			<div role="main" class="ui-content" style="background:#fff;color:#333" >
+			<img src="img/logo.png" style="display:block;margin:0px auto;width:48px">
+        	<h3 class="ui-title" class="nocartmsg"></h3>
+        	<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" style="background:#C58BE2;display:block">Continue Shopping</a>
+        	</div>
+		</div>
 	</div>
 
 </div><!-- /page -->

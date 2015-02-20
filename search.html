@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
 	<title>Nikit Designer Outlet</title>
 	
 	<link rel="shortcut icon" href="../favicon.ico">
@@ -117,19 +118,21 @@
 		</ul>
 	</div>
 
-	<div data-role ="header" data-toggle-tap="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
+	<div data-role ="header" data-tap-toggle="false"  data-position="fixed"  data-theme="b" data-content-theme="b" style="background: #333;">
 		<a data-ajax="false" href="#" data-rel="back"><i class="fa fa-arrow-left"></i></a>
-		<h4 class="productTitle">Search</h4>
-		<!--<a data-ajax="false" href="checkout.html" style="width: 95px;"><i class="fa fa-arrow-right"></i> Checkout</a>-->
+		<div class="searchInput"><input id="searchTextBox" type="text" placeholder="Search products here..." /></div>
+		<a data-ajax="false" class=".searchBtn" href="#"><i class="fa fa-search"></i></a>
 	</div>
 	<!-- /header -->
 
 	<div role="main" class="ui-content">
 
-	<h1 id="searchTerm" class="pagetitle productTitle"><span id="cartTotal" style="float:right"></span></h1>
+	<!--<div class="searchInput"><input id="searchTextBox" type="text" placeholder="Search products here..." /></div>-->
+	<h1 id="searchTerm" style="display:none" class="pagetitle productTitle"></h1>
 		
-		<ul id="searchList" data-role="listview" data-inset="true" data-theme="b" style="margin: 0px 20px;">
+		<ul id="searchList" data-role="listview" data-inset="true" data-theme="b" style="margin: 0px 45px;">
 		</ul>
+		<!--<ul id="autocomplete" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search products" data-filter-theme="a" style="margin: 0px 20px;"></ul>-->
 
 		<!-- Popular Deals -->
 

@@ -18,6 +18,22 @@ font-family: Roboto;
 text-transform: uppercase;
 }
 
+.searchInput{
+
+}
+
+.searchInput div.ui-input-text{
+	margin: 0px 45px;
+	border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border: 0px solid;
+border-bottom: 1px solid #C58BE2;
+
+text-shadow:none!important;
+background:transparent;
+
+}
+
 #mypanel{
 	background: #444;
 	color: #fff;
@@ -54,7 +70,7 @@ text-transform: uppercase;
 
 .featured div.product_wrap a div.imgwrapper img{
 	width: 100%;
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 
 .featured div.product_wrap a div.info{
@@ -94,11 +110,37 @@ text-transform: uppercase;
 }
 
 h1.pagetitle{
-	margin: 10px 20px 5px;
+	margin: 15px 20px 5px;
 border-bottom: 2px solid #C58BE2;
-font-weight: 200;
+font-weight: 300;
+/*display: inline;
+border: 2px solid #C58BE2;
+background: #555;
+color: #fff;
+text-shadow: none;*/
+}
+.featured_wrapper{
+	background: #eaeaea;
+margin: 25px 10px 0px;
+display: block;
+border-radius: 5px;
+min-height: 250px;
+padding-top: 5px;
 }
 
+.LoadingProducts1,.LoadingProducts2,.LoadingProducts3,.LoadingProducts4,.LoadingProducts5,.LoadingProducts6{
+	text-align: center;
+margin-top: 80px;
+color: #333;
+font-weight: bold;
+}
+
+.women{
+background-color:rgba(253, 197, 245, 0.66);
+}
+.popular{
+	background-color: #fff;
+}
 .pimg_wrapper{
 	float: left;
 	clear:both;
@@ -111,7 +153,7 @@ font-weight: 200;
 	margin: 10px 20px 5px;
 }
 
-#cartList li{
+#cartList li, #searchList li {
 	background: transparent!important;
 	color: #333!important;
 	border-bottom: 1px solid #C58BE2;
@@ -121,12 +163,16 @@ font-weight: 200;
 
 }
 
-#cartList img{
+#searchList li a{
+	background: #fff!important;
+	color: #333!important;
+}
+#cartList img, #searchList a img{
 	float: left;
 }
 
-#cartList li p, #cartList li h4{
-	margin: 5px;
+#cartList li p, #cartList li h4, #searchList li a p, #searchList li a h4{
+	margin: auto 5px;
 	padding: 5px;
 }
 
@@ -201,7 +247,7 @@ border-bottom: 1px solid #555!important;
 }
 
 .featured div.product_wrap a div.imgwrapper img {
-	margin-top: -90px;
+	/*margin-top: -90px;*/
 }
 
 }
